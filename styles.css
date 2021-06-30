@@ -1,0 +1,137 @@
+body{
+    background-color: rgb(54, 54, 54);
+    font-family: 'Courier New', Courier, monospace;
+}
+.test{
+    color: #8392a2;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: inline;
+}
+.recipe{
+    position: relative;
+    text-align: justify;
+    float: left;
+    width: 20em;
+}
+
+.image img{
+    position:relative;
+    left:auto;
+    top: auto;
+    opacity: 10%;
+    transition: 1s;
+}
+
+.image img:hover{
+    opacity: 100%;
+    transition: 1s;
+}
+.text{
+    font-size: 2em;
+    position:relative;    
+    left: 2em;
+    top: -4em;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.text:hover{
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+.text a{
+    text-decoration: none;
+    color: none;
+}
+
+.text a:hover{
+    text-decoration: none;
+    color: white;
+}
+.image-food img{
+    position: relative;
+}
+
+.button-home{
+    position: fixed;
+    right: 0px;
+}
+
+.button-home button{
+    background-color: rgb(121, 197, 165);
+    border-radius: 25px;
+}
+
+.button-home button:hover{
+    cursor: pointer;
+}
+
+.container-food{
+    position: relative;
+    float: left;
+    width: 20em;
+}
+
+.title-food{
+    position: inherit;
+    left: 8em;
+    top: -6.5em;
+    font-size: 3em;
+    font-family:monospace;
+    color: white;
+}
+
+.ingredients{
+    position: inherit;
+    left: 20em;
+    top: -17em;
+    color: white;
+}
+
+.preparation{
+    position:inherit;
+    left: 20em;
+    top: -17em;
+    color: white;
+}
+
+#shop-list{
+    background-color: burlywood;
+    float: right;
+    margin: 1em;
+}
+
+#shop-list>li{
+    font-family: 'Times New Roman', Times, serif;
+    color: cyan;
+    font-size: 2em;
+    }
+
+#remove-item{
+    border-radius: 10px;
+    background-color: red;
+    position: relative;
+    left: 13em;
+}
+
+#remove-item:hover{
+    cursor: pointer;
+}
+
+#itemplus{
+    position: relative;
+    left: 0em;
+    top: -3em;
+}
+#mybtn{
+    border-radius: 10px;
+    background-color: green;
+}
+#mybtn:hover{
+    cursor: pointer;
+}

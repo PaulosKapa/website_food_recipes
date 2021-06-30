@@ -1,0 +1,60 @@
+<!--to do: cook book (search bar [how]) 1) page with images with food (animations) (kinda done now for one food. Add more food after comments)(add the icon thingy)2)page for each food(done i guess?) 3) shopping list (styles (done, almost), save state[lol how]) -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8"/>
+        <title>
+            Cook book 
+        </title>
+        <link rel = "icon" href = "images/logo.jpg" type = "image/x-icon">
+    </head>
+    <body>
+        <div class="test">
+            <p><h1>Cook book</h1></p>
+        </div>
+        <ol id="shop-list"></ol>
+        </div>
+        <input type="button" id="remove-item" value="remove" onclick="remitem()">
+        <form name="item-plus" id="itemplus" method="post" action="" onclick="opacity()">
+            <label for="item" id = "label1"></label>
+            <input type="text" id="item" name="item" value="" placeholder="add item">
+            <input type="button" id="mybtn" value="Submit" onclick="additem()">
+        </form>
+        <div class="container">
+            <div class="recipe">
+                <div class="image">
+                    <img src = "images/pasta.jpg">
+                </div>
+                <div class="text">
+                    <a href="pasta.html" target="_blank">pasta</a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        function additem() {
+          var node = document.createElement("LI");
+          node.setAttribute("id","c")
+          var text = document.getElementById("item");
+          var textnode = document.createTextNode(text.value);
+          if (text.value == ""){
+
+          }
+          else{
+          node.appendChild(textnode);
+          document.getElementById("shop-list").appendChild(node);
+          text.value="";}
+          var btn = document.getElementById("mybtn");
+          btn.addEventListener("keyup", function(event){
+
+        });
+
+    }
+        function remitem(){
+            var text = document.getElementById("shop-list")
+            text.removeChild(text.lastChild)
+        }
+        </script>
+</html>
